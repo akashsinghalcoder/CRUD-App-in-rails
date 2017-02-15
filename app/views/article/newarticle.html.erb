@@ -1,0 +1,8 @@
+<h4> Create New Article </h4>
+
+<%= form_tag url_for(controller: 'article', action: 'createnewarticle') do %>
+Title: <%= text_field_tag :title , cols: 40,rows: 40 %> <br>
+Content: <%= text_field_tag :content %> <br>
+<%= submit_tag "Create Article"%>
+<% end %>
+<a href="/article">Go Back</a>

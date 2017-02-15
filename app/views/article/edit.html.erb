@@ -1,0 +1,6 @@
+<h4>Edit Article </h4>
+<%= form_tag url_for(controller: 'article', action: 'update') do %>
+Title: <%= text_field_tag :title, @article.title %> <br>
+Content: <%= text_field_tag :content, @article.content %> <br>
+<%= submit_tag "Edit Article"%>
+<% end %>

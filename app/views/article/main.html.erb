@@ -1,0 +1,7 @@
+<a href="/newarticle">New Article</a>
+<% @articles.each do |a| %>
+<h1><%= a.title %></h1>
+<a href="/article/<%=a.id %>">Show</a> 
+<a href="/article/<%=a.id %>/edit"> Edit </a>
+<a href="/article/<%=a.id %>/delete"> Delete </a>
+<% end %> 
